@@ -39,6 +39,17 @@ services:
             - "5672:5672"
             - "15672:15672"
 
+    nginx:
+        image: nginx:alpine
+        container_name: mailflow_nginx
+        ports:
+            - "80:80"
+        volumes:
+            - .:/var/www/app
+            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        depends_on:
+            - app
+
 
 volumes:
     mysql_data:
