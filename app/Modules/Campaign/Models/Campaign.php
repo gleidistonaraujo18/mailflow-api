@@ -11,10 +11,10 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-#[Fillable(['subject', 'body', 'status', 'scheduled_at', 'sent_at'])]
+#[Fillable(['segment_id','subject', 'body', 'status', 'scheduled_at', 'sent_at'])]
 class Campaign extends Model
 {
-    use HasUuids, HasFactory;
+    use HasUuids;
 
     protected $keyType = 'string';
     public $incrementing = false;
