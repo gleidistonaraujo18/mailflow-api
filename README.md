@@ -1,6 +1,6 @@
 # MailFlow API
 
-API backend para disparo de e-mails em lote via segmentos de clientes, construída com Laravel 12, Redis e MySQL.
+API backend para disparo de e-mails em lote via segmentos de clientes, construída com Laravel 13, Redis e MySQL.
 
 ## O problema que este projeto resolve
 
@@ -28,7 +28,7 @@ Status da campanha atualizado para "processing"
 
 ## Stack
 
-- **PHP 8.3** + **Laravel 12**
+- **PHP 8.3** + **Laravel 13**
 - **MySQL 8** — armazenamento de customers, segmentos e campanhas
 - **Redis** — driver de fila para processamento assíncrono
 - **PestPHP** — testes automatizados
